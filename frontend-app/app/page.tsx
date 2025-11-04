@@ -7,14 +7,18 @@ import { ArrowDown } from 'lucide-react'; // Example icon
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen bg-gray-300 text-white flex flex-col items-center justify-center p-4">
+    <div className="min-h-screen bg-background text-white flex flex-col items-center justify-center p-4">
+      <h2 className="text-3xl font-semibold mb-6">Stablecoin for octant</h2>
       <header className="w-full max-w-md flex justify-end mb-8">
+        
         <WalletConnectButton />
       </header>
 
-      <Card className="w-full max-w-md bg-zinc-900 border-zinc-700 text-white">
+      <Card className="w-full max-w-md">
         <CardHeader>
-          <CardTitle className="text-2xl font-bold text-white">Swap</CardTitle>
+          <CardTitle>
+            <h3 className="text-xl font-semibold">Swap</h3>
+          </CardTitle>
         </CardHeader>
         <CardContent className="space-y-4">
           <div>
@@ -26,7 +30,7 @@ export default function HomePage() {
                 id="you-pay"
                 type="number"
                 placeholder="0.0"
-                className="flex-grow bg-zinc-800 border-zinc-700 text-white placeholder-zinc-500"
+                className="grow  placeholder-zinc-500"
               />
               <Button variant="outline" className="bg-zinc-700 border-zinc-600 text-white hover:bg-zinc-600">
                 MAX
