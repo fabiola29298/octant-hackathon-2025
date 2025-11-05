@@ -7,9 +7,12 @@ export default function PrivyProvider({ children }: { children: React.ReactNode 
       <BasePrivyProvider
         appId={process.env.NEXT_PUBLIC_PRIVY_APP_ID || ""}
         config={{
-          embeddedWallets: {
-            createOnLogin: "all-users",
-          },
+            embeddedWallets: {
+            ethereum: {
+                createOnLogin: "all-users",
+            },
+          }
+          
         }}
       >
         {children}
