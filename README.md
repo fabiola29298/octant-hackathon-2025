@@ -31,9 +31,19 @@ Our project is organized into the following key components:
 `frontend/frontend-app`: This directory contains the user interface for Octaswap, built to provide a seamless and intuitive swapping experience.
 ### Smart Contracts	
 `contracts/OctantUSD.sol`: This ERC20 stablecoin contract defines our fully collateralized 'oUSD' token, pegged 1:1. 
-`contracts/PublicGoodHook.sol`: This contract is responsible for implementing the 3% fee on every swap, directing these funds to the Public Good Treasury. This hook is called before swaps to deduct the fee and send it to the treasury
+Deployed: 0x9a957CBf2938A8f18cC622dCa7452003A3e8f154
+`contracts/PublicGoodHook.sol`: This contract is responsible for implementing the 3% fee on every swap, directing these funds to the Public Good Treasury. This hook is called before swaps to deduct the fee and send it to the treasury.
+Deployed: 0x76d4788baa7e24FeD253B3Ce1992700F4072bC23
 `contracts/PublicGoodTreasury.sol`: This contract securely manages fees from swaps.  
+Deployed: 0x98755Fc7D3dEEeF114e2585C9a7dc609240C2E5d
 `contracts/UniswapV4Mocks.sol`: These contracts are mock implementations of Uniswap V4 components, used for testing and development purposes.
+UniswapV4Router: 0x296852b1AC730b84EA217A7A0a320559826BA492
+UniswapV4Quoter: 0x1F1cEC96DfDA5094e545f3aa8AD0241baE36e1a7
+0x1F1cEC96DfDA5094e545f3aa8AD0241baE36e1a7
+WETH: 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2 (mainnet)
+USDC: 0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48 (mainnet)
+Deployer: 0xb18109b3b6B8Ba5188cbDdBd2bb6046fa69F605C
+Network: Tenderly
 
 ### Images
 
