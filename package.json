@@ -1,0 +1,37 @@
+{
+  "name": "uniswap-v4-fork-demo",
+  "version": "1.0.0",
+  "description": "Uniswap V4 interaction on mainnet fork with Octant stablecoin",
+  "main": "index.js",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test --network hardhat",
+    "deploy": "hardhat run scripts/deploy.ts --network hardhat",
+    "seed": "hardhat run scripts/seedPools.ts --network hardhat",
+    "swap": "hardhat run scripts/quoteAndSwap.ts --network hardhat",
+    "setup": "hardhat run scripts/deployAndSeed.ts --network hardhat",
+    "demo": "hardhat run scripts/setupAndTest.ts --network hardhat",
+    "test-fee": "hardhat run scripts/testPublicGoodSwap.ts --network hardhat",
+    "node": "hardhat node",
+    "node:deploy": "hardhat run scripts/deployAndSeed.ts --network localhost",
+    "node:test": "hardhat run scripts/testPublicGoodSwap.ts --network localhost"
+  },
+  "keywords": ["uniswap", "v4", "hardhat", "typescript", "defi"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "@types/chai": "^4.3.11",
+    "@types/mocha": "^10.0.6",
+    "@types/node": "^20.10.6",
+    "chai": "^4.3.10",
+    "hardhat": "^2.19.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.1",
+    "dotenv": "^16.3.1",
+    "ethers": "^6.14.0"
+  }
+}
