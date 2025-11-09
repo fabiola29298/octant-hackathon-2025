@@ -1,16 +1,43 @@
-# Octant Hackathon
+# Octaswap: Every Swap Makes an Impact
 
+The DeFi landscape is revolutionary, with billions transacted daily. But wnpm hat if our transactions could build more than just wealth? What if they could build a better world?
 
+Octaswap is a decentralized exchange, where along with helping in seamlessly swapping tokens, we are also aiming to change life. 
 
-### 💡 Frontend / Description  
+## Here's how we are doing it 
 
-.env info
+1. A Stable Store of Value for Octant : oUSD
 
-*   **`NEXT_PUBLIC_RPC_URL`**: This is the HTTPS RPC URL provided by Tenderly for your Mainnet Fork. Ensure it points to your specific fork instance.
-*   **`NEXT_PUBLIC_PRIVY_APP_ID`**: Obtain this from your Privy dashboard after creating an application. It's used for client-side authentication.
-*   **`PRIVY_APP_SECRET`**: Also from your Privy dashboard. This should be kept secure and is typically used for server-side operations if you have them, but is often required by Privy's SDK even for frontend only setups.
+> Pegged 1:1 with US Dollar to provide a reliable and stable asset in an otherwise volatile market, ensuring our users have a secure base for their transactions.
 
-### ▶️ Local Development
+2. Seamless Swapping
+
+> Our users can easily exchange oUSD for ETH, BTC, and any other supported token within the ecosystem, and vice versa, and we are enabling this by using the Uniswap v4 hook for dynamic fee concept
+
+3. A Public Goods Engine
+
+>This is where Octaswap truly shines. A 3% fee on every swap is dedicated entirely to public goods. 
+
+## Tracks Applied
+- Best tutorial for Octant v2 [link](https://www.notion.so/Octant-V2-Complete-Technical-Guide-Integration-Tutorial-2a63ed3fab0580b3ac6ae2cdd0c62a6f)
+- Best public good projects
+- Best team for dev3pack
+- Best use of uniswap v4 Hooks
+
+## Project Structure
+Our project is organized into the following key components:
+
+### Frontend
+`frontend/frontend-app`: This directory contains the user interface for Octaswap, built to provide a seamless and intuitive swapping experience.
+### Smart Contracts	
+`contracts/OctantUSD.sol`: This ERC20 stablecoin contract defines our fully collateralized 'oUSD' token, pegged 1:1. 
+`contracts/PublicGoodHook.sol`: This contract is responsible for implementing the 3% fee on every swap, directing these funds to the Public Good Treasury. This hook is called before swaps to deduct the fee and send it to the treasury
+`contracts/PublicGoodTreasury.sol`: This contract securely manages fees from swaps.  
+`contracts/UniswapV4Mocks.sol`: These contracts are mock implementations of Uniswap V4 components, used for testing and development purposes.
+
+ 
+
+### ▶️ Local Development [frontend]
 
 To run the project locally, use the following commands:
 
