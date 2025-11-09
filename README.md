@@ -35,7 +35,12 @@ Our project is organized into the following key components:
 `contracts/PublicGoodTreasury.sol`: This contract securely manages fees from swaps.  
 `contracts/UniswapV4Mocks.sol`: These contracts are mock implementations of Uniswap V4 components, used for testing and development purposes.
 
- 
+### Images
+
+![Landing page](/images/landing1.png)
+
+
+![Landing page and swap card](/images/landing2.png)
 
 ### ▶️ Local Development [frontend]
 
